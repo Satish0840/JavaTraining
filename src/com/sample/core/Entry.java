@@ -3,20 +3,14 @@
  */
 package com.sample.core;
 
+import java.io.IOException;
+
 public class Entry {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 
-		int a = 10;
-		int b = 5;
-		
-		Calculator calc = new Calculator();
-		calc.add(a,b);
-		calc.sub(a,b);
-		calc.mul(a,b);
-		calc.div(a,b);
-		calc.sqrt(a);
-		calc.cube(a);
+		Menu m = new Menu();
+		m.show();
 	}
 
 }
